@@ -9,8 +9,11 @@ JVM TI is a two way interface. Client of JVM TI is called agent,can be notified 
 
 Actually java agent is a program that can be execute separately without interfering other process .We can use Agent for track the methods in a program without changing it. 
 Normally we can run it in two phases, 
+
 	1.OnLoad phase 
+	
 	2.Live phase
+	
 Also we can shutdown the agent by UnLoading libraries or unloaded by the termination of the VM whether through normal termination or VM failure, including start-up failure.But this will not work for uncontrolled shutdown.
 JVM specify different , separate environments for each agent. And they are independent from others and changes of one not affect to another. 
 We can use agent for different purpose. Agent can  Monitor threads,suspend and resume them.Also monitor classes ,change them and do many other functions.
@@ -20,12 +23,14 @@ You can use this link to see more in detail. [ https://docs.oracle.com/javase/8/
 
 How to run!
 1. Open terminal in the folder( that contain all 3 files).
+
 2.use this codes in terminal
-  i. (This will create class files)
+
+	i. (This will create class files)
   
-  ii. (This will create Agent.jar file )
+	ii. (This will create Agent.jar file )
   
-  iii. (This code will execute the Agent.jar file and give the output)
+	iii. (This code will execute the Agent.jar file and give the output)
   
 Output!
 
