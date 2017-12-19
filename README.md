@@ -28,11 +28,11 @@ How to run!
 
 2.use this codes in terminal(console)
 
-	i. (This will create class files)
+	i. javac  *.java -(This will create class files)
   
-	ii. (This will create Agent.jar file )
+	ii. jar cvfm Agent.jar manifest.mf *.class-(This will create Agent.jar file )
   
-	iii. (This code will execute the Agent.jar file and give the output)
+	iii. java  -javaagent:MyJar.jar SampleClass-(This code will execute the Agent.jar file and give the output)
   
 Output!
 
